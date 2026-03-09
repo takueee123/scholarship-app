@@ -85,7 +85,7 @@ export default function App() {
         : `Hello **${currentUser?.username}**! Ask me anything about **${cat?.label||"scholarships"}**.`
       }]);
     }
-  }, [page]);
+  }, [page, messages.length, activeCategory, currentUser]);
 
   // ── Auth ──────────────────────────────────────────────────────
   const handleLogin = () => {
