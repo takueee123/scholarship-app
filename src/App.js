@@ -82,7 +82,7 @@ export default function App() {
           : `Hello **${currentUser?.username}**! 👋 I'm your scholarship assistant. You're exploring **${catLabel}** scholarships.\n\nAsk me anything — I'll search through curated data to find the best matches!`,
       }]);
     }
-  }, [page, activeCategory, currentUser, messages.length]);
+ }, [page, activeCategory, currentUser]);
   // ── BUILD CONTEXT from user profile ────────────────────────────
   const buildContext = () => {
     const p = currentUser?.profile;
